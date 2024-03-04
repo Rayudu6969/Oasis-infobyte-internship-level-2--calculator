@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculator</h1>
+        <input type="text" id="input">
+        <!-- DEL & AC -->
+        <div class="row">
+            <button onclick="back()" class="btn-2 spl">Del</button>
+            <button onclick="ac()" class="btn-2 spl">AC</button>
+        </div>
+        <!-- (), ^ , % and / -->
+        <div class="row">
+            <button onclick="brackets()" class="btn-2">( )</button>
+            <button onclick="append('**')" class="btn-2">^</button>
+            <button onclick="append('%')" class="btn-2">%</button>
+            <button onclick="append('/')" class="btn-2">/</button>
+        </div>
+        <!-- 7, 8, 9, * -->
+        <div class="row">
+            <button onclick="append('7')" class="btn-1">7</button>
+            <button onclick="append('8')" class="btn-1">8</button>
+            <button onclick="append('9')" class="btn-1">9</button>
+            <button onclick="append('*')" class="btn-2">*</button>
+        </div>
+        <!-- 4, 5, 6, - -->
+        <div class="row">
+            <button onclick="append('4')" class="btn-1">4</button>
+            <button onclick="append('5')" class="btn-1">5</button>
+            <button onclick="append('6')" class="btn-1">6</button>
+            <button onclick="append('-')" class="btn-2">-</button>
+        </div>
+        <!-- 1, 2, 3, + -->
+        <div class="row">
+            <button onclick="append('1')" class="btn-1">1</button>
+            <button onclick="append('2')" class="btn-1">2</button>
+            <button onclick="append('3')" class="btn-1">3</button>
+            <button onclick="append('+')" class="btn-2">+</button>
+        </div>
+        <!-- +-, 0, ., = -->
+        <div class="row">
+            <button onclick="append('0')" class="btn-1">0</button>
+            <button onclick="dot()" class="btn-1">.</button>
+            <button onclick="calculate()" class="btn-0 spl">=</button>
+        </div>
+    </div>
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
